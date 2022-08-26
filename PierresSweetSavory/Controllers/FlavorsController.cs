@@ -49,7 +49,7 @@ namespace PierresSweetSavory.Controllers
     }
 
     [HttpPost]
-    public ActionResult Edit(flavor flavor)
+    public ActionResult Edit(Flavor flavor)
     {
       _db.Entry(flavor).State = EntityState.Modified;
       _db.SaveChanges();
